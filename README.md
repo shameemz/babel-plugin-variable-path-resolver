@@ -1,12 +1,7 @@
 # babel-plugin-variable-path-resolver
 [![Maintenance Status][status-image]][status-url] [![NPM version][npm-image]][npm-url]
 
-A [Babel](http://babeljs.io) plugin for resolving dynamic modules based on a environment.
-
-## Description
-
-This plugin can be used for dynamically importing modules based on a environment variable.
-
+A [Babel](http://babeljs.io) plugin for resolving dynamic modules based on a environment variable.
 
 ## Usage
 
@@ -25,8 +20,8 @@ Specify the plugin in your `.babelrc` with the custom environment name and path 
     ["variable-path-resolver", {
       "envName": "CUSTOMENV",
       "vars": {
-        "ENV1": {"Bar": "Foo1", "Bar": "Foo2" },
-        "ENV2": {"Bar": "Foo3", "Bar": "Foo4"}
+        "ENV1": {"Bar1": "Foo1", "Bar2": "Foo2" },
+        "ENV2": {"Bar1": "Foo3", "Bar2": "Foo4"}
       }
     }]
   ]
@@ -37,7 +32,7 @@ Specify the plugin in your `.babelrc` with the custom environment name and path 
 // examples:
 import SomeComponent from './components/{Bar1}/SomeComponent';
 // multiple replacement
-import AnotherComponent from './components/{Bar1}/{Foo1}/AnotherComponent';
+import AnotherComponent from './components/{Bar1}/{Bar2}/AnotherComponent';
 ```
 ##### Run your project like this
 ```
@@ -77,7 +72,7 @@ npm run-script example-project1
   "name": "example-project2",
   "scripts": {
     "mobile-com": "SITE=mobile-com node scripts/start.js",
-    "mobile-eu": "SITE=mobile-com node scripts/start.js",
+    "mobile-eu": "SITE=mobile-eu node scripts/start.js",
 ```
 ```
 //example: your folder structure
