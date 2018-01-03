@@ -78,7 +78,6 @@ npm run-script example-project1
   "scripts": {
     "mobile-com": "SITE=mobile-com node scripts/start.js",
     "mobile-eu": "SITE=mobile-com node scripts/start.js",
-    ...
 ```
 ```
 //example: your folder structure
@@ -146,10 +145,7 @@ export class AppEntry extends Component {
 - `envName`: Environment variable name used to determine the current running config
 - `sites`: A map of configs for each environment, where the keys will be replaced with the values on resolving the path
 - `sites` - `default` is used for resolving the path if the target file not present.
-- `extensions`: An array of extensions used in the resolver. Override the default extensions (`['.js', '.jsx', '.css','.scss', '.jpeg', '.png', '.gif', '.es', '.es6', '.mjs']`).
-- `cwd`: By default, the working directory is the one used for the resolver, but you can override it for your project.
-    - The custom value `babelrc` will make the plugin look for the closest babelrc configuration based on the file to parse.
-    - The custom value `packagejson` will make the plugin look for the closest `package.json` based on the file to parse.
+- `extensions`: An array of extensions used in the resolver. Override the default extensions (`['.js', '.jsx', '.es', '.es6', '.mjs']`).
 - `transformFunctions`: Array of functions and methods that will have their first argument transformed. By default those methods are: `require`, `require.resolve`, `System.import`, `jest.genMockFromModule`, `jest.mock`, `jest.unmock`, `jest.doMock`, `jest.dontMock`.
 
 
@@ -163,3 +159,9 @@ rm -rf node_modules/.cache/babel-loader
 ````
 
 
+
+[status-image]: https://img.shields.io/badge/status-maintained-brightgreen.svg
+[status-url]: https://github.com/shameemz/babel-plugin-variable-path-resolver
+
+[npm-image]: https://img.shields.io/npm/v/babel-plugin-variable-path-resolver.svg
+[npm-url]: https://www.npmjs.com/package/babel-plugin-variable-path-resolver
