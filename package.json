@@ -5,7 +5,7 @@
   "description": "Path resolver babel plugin using variables",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shameemz/babel-plugin-variable-path-resolver.git"
+    "url": "git+https://github.com/shameemz/babel-plugin-variable-path-resolver.git"
   },
   "engines": {
     "node": ">= 6.0.0"
@@ -13,10 +13,7 @@
   "files": [
     "lib"
   ],
-  "author": {
-    "name": "Shameem",
-    "email": "shameem.kt@gmail.com"
-  },
+  "author": "Shameem <shameem.kt@gmail.com>",
   "license": "MIT",
   "keywords": [
     "babel",
@@ -46,12 +43,12 @@
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.0",
-    "common-tags": "^1.4.0",
-    "eslint": "^4.9.0",
-    "eslint-config-airbnb-base": "^11.3.2",
+    "babel-preset-env": "^1.6.1",
+    "common-tags": "^1.6.0",
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
-    "jest": "^21.2.1",
+    "jest": "^22.0.4",
     "standard-version": "^4.2.0"
   },
   "scripts": {
@@ -77,5 +74,12 @@
       "eslint",
       "eslint-plugin-import"
     ]
+  },
+  "bugs": {
+    "url": "https://github.com/shameemz/babel-plugin-variable-path-resolver/issues"
+  },
+  "homepage": "https://github.com/shameemz/babel-plugin-variable-path-resolver#readme",
+  "directories": {
+    "lib": "lib"
   }
 }
