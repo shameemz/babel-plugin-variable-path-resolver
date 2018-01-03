@@ -24,7 +24,7 @@ Specify the plugin in your `.babelrc` with the custom environment name and path 
   "plugins": [
     ["variable-path-resolver", {
       "envName": "CUSTOMENV",
-      "sites": {
+      "vars": {
         "ENV1": {"Bar": "Foo1", "Bar": "Foo2" },
         "ENV2": {"Bar": "Foo3", "Bar": "Foo4"}
       }
@@ -60,7 +60,7 @@ npm run-script example-project1
   "plugins": [
     ["variable-path-resolver", {
       "envName": "SITE",
-      "sites": {
+      "vars": {
         "mobile-com": {"device": "Mobile", "site": "Com" },
         "mobile-eu": {"device": "Mobile", "site": "Eu"},
         "desktop-com": {"device": "Desktop", "site": "Com" },
@@ -143,8 +143,8 @@ export class AppEntry extends Component {
 ### Options
 
 - `envName`: Environment variable name used to determine the current running config
-- `sites`: A map of configs for each environment, where the keys will be replaced with the values on resolving the path
-- `sites` - `default` is used for resolving the path if the target file not present.
+- `vars`: A map of configs for each environment, where the keys will be replaced with the values on resolving the path
+- `vars` - `default` is used for resolving the path if the target file not present.
 - `extensions`: An array of extensions used in the resolver. Override the default extensions (`['.js', '.jsx', '.es', '.es6', '.mjs']`).
 - `transformFunctions`: Array of functions and methods that will have their first argument transformed. By default those methods are: `require`, `require.resolve`, `System.import`, `jest.genMockFromModule`, `jest.mock`, `jest.unmock`, `jest.doMock`, `jest.dontMock`.
 
