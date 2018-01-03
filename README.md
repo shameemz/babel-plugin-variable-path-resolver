@@ -96,7 +96,7 @@ npm run-script example-project1
 SITE=mobile-eu npm run-script example-project2
 ```
 
-## Adavantage of this plugin
+## Advantage of this plugin
 
 You can create multiple sites with basic usage of inheritance. As per the above example, keeping .com site as the default and all other sites as inherited.
 
