@@ -29,12 +29,12 @@
     "import"
   ],
   "dependencies": {
-    "find-babel-config": "^1.1.0",
-    "glob": "^7.1.2",
-    "pkg-up": "^2.0.0",
-    "reselect": "^3.0.1",
-    "resolve": "^1.4.0",
-    "lodash.pick": "^4.4.0"
+    "find-babel-config": "~1.1.0",
+    "glob": "~7.1.2",
+    "pkg-up": "~2.0.0",
+    "reselect": "~3.0.1",
+    "resolve": "~1.4.0",
+    "lodash.pick": "~4.4.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
